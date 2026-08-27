@@ -1,0 +1,341 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* levelix_calls_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260609\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 09:10+0000\n"
+"PO-Revision-Date: 2026-08-27 09:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/wizard/levelix_number_fix.py:0
+msgid "  … and %s more"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_config.py:0
+msgid "%s new operator(s) added. Choose the Odoo user."
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Answered"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid "Apply"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Auto-created from an XCall call."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__backend_user_id
+msgid "Backend ID"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__backend_name
+msgid "Backend name"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__backend_email
+msgid "Backend operator (email)"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Call"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Call %s"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Call UID"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Cancelled"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__message_id
+msgid "Chatter Message"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid "Close"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__company_id
+msgid "Company"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_config.py:0
+msgid "Connection error: %s"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__partner_id
+msgid "Contact"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__fix_partners
+msgid "Contacts (res.partner)"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields.selection,name:levelix_calls_crm.selection__levelix_calls_config__lead_not_found__create
+msgid "Create a new opportunity"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__create_uid
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__create_date
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__country_id
+msgid "Default Country"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Details"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__display_name
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_config__display_name
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__display_name
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/wizard/levelix_number_fix.py:0
+msgid "Done. Updated %s number(s); %s could not be parsed (left as-is)."
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Ended"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_config.py:0
+msgid "Failed to fetch operators (HTTP %s)."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_config_form_crm
+msgid "Fetch operators"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__id
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_config__id
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__id
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__id
+msgid "ID"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Incoming"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__write_uid
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__write_date
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__fix_leads
+msgid "Leads (crm.lead)"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Missed"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.actions.act_window,name:levelix_calls_crm.action_levelix_number_fix
+#: model:ir.ui.menu,name:levelix_calls_crm.menu_levelix_number_fix
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid "Normalize Phone Numbers"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model,name:levelix_calls_crm.model_levelix_number_fix
+msgid "Normalize Phone Numbers (E.164)"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_user_map__user_id
+msgid "Odoo user"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__operator_user_id
+msgid "Operator"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.actions.act_window,name:levelix_calls_crm.action_levelix_user_map
+#: model:ir.ui.menu,name:levelix_calls_crm.menu_levelix_user_map
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_user_map_list
+msgid "Operator Mapping"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_config.py:0
+msgid "Operators"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_call__lead_id
+msgid "Opportunity"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Outgoing"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid "Preview"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid ""
+"Reformat existing <b>phone</b> / <b>mobile</b> numbers to the E.164\n"
+"                    format (e.g. <code>+998901112233</code>) so incoming calls match reliably.\n"
+"                    Run <b>Preview</b> first."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model_terms:ir.ui.view,arch_db:levelix_calls_crm.view_levelix_number_fix_form
+msgid "Reformat the numbers now?"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_number_fix__result
+msgid "Result"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields.selection,name:levelix_calls_crm.selection__levelix_calls_config__lead_not_found__skip
+msgid "Skip (keep call only)"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_call.py:0
+msgid "Started"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/models/levelix_user_map.py:0
+msgid "The mapped user must be a member of the mapping's company."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.constraint,message:levelix_calls_crm.constraint_levelix_calls_user_map_uniq_email
+msgid "This backend operator is already mapped in this company."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,help:levelix_calls_crm.field_levelix_number_fix__country_id
+msgid "Used to parse numbers without a country code."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,help:levelix_calls_crm.field_levelix_calls_config__lead_not_found
+msgid ""
+"What to do when an incoming call number has no matching opportunity/lead."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model.fields,field_description:levelix_calls_crm.field_levelix_calls_config__lead_not_found
+msgid "When no match found"
+msgstr ""
+
+#. module: levelix_calls_crm
+#. odoo-python
+#: code:addons/levelix_calls_crm/wizard/levelix_number_fix.py:0
+msgid "Would change %s number(s); %s could not be parsed."
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model,name:levelix_calls_crm.model_levelix_calls_call
+msgid "XCall Call"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model,name:levelix_calls_crm.model_levelix_calls_config
+msgid "XCall Connection"
+msgstr ""
+
+#. module: levelix_calls_crm
+#: model:ir.model,name:levelix_calls_crm.model_levelix_calls_user_map
+msgid "XCall Operator Mapping"
+msgstr ""

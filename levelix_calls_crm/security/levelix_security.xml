@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Operator mapping — multi-company izolyatsiyasi. company_id required + migration
+         (eski NULL to'ldirilgan) → QAT'IY domen. -->
+    <record id="rule_levelix_user_map_company" model="ir.rule">
+        <field name="name">XCall Operator Map: multi-company</field>
+        <field name="model_id" ref="model_levelix_calls_user_map"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id','in',company_ids)]</field>
+    </record>
+
+</odoo>

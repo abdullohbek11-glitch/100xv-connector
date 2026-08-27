@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form (single record, settings-like) -->
+    <record id="view_levelix_config_form" model="ir.ui.view">
+        <field name="name">levelix.calls.config.form</field>
+        <field name="model">levelix.calls.config</field>
+        <field name="arch" type="xml">
+            <form string="XCall Connection">
+                <header>
+                    <button name="action_connect" type="object"
+                            string="Connect" class="btn-primary"/>
+                    <button name="action_send_test" type="object"
+                            string="Send Test"
+                            invisible="not subscription_id"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,connected"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="base_url" placeholder="https://api.levelix.uz"/>
+                            <field name="api_key" password="True"
+                                   placeholder="Key from the XCall panel"/>
+                        </group>
+                    </group>
+                    <field name="last_error" readonly="1"
+                           invisible="not last_error" class="text-danger"/>
+                    <!-- internal, hidden -->
+                    <field name="name" invisible="1"/>
+                    <field name="webhook_secret" invisible="1"/>
+                    <field name="subscription_event" invisible="1"/>
+                    <field name="subscription_id" invisible="1"/>
+                    <field name="company_id" invisible="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menyu → to'g'ridan yagona yozuv formasini ochadi -->
+    <record id="action_levelix_connection" model="ir.actions.server">
+        <field name="name">Connection</field>
+        <field name="model_id" ref="model_levelix_calls_config"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_connection()</field>
+    </record>
+
+</odoo>

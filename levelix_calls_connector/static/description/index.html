@@ -1,0 +1,48 @@
+<section style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#14120f;max-width:960px;margin:0 auto;line-height:1.6;">
+
+  <img src="banner.png" alt="XCall Connector" style="width:100%;height:auto;border-radius:2px;display:block;margin-bottom:40px;">
+
+  <div style="border-left:3px solid #2e699d;padding:4px 0 4px 20px;margin-bottom:40px;">
+    <p style="text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:#2e699d;margin:0 0 8px;">Phase 1 - Foundation</p>
+    <h1 style="font-size:34px;font-weight:600;margin:0 0 12px;letter-spacing:-.02em;">Connect Odoo to XCall</h1>
+    <p style="font-size:19px;color:#6b655c;margin:0;">XCall records your team's phone calls and streams the events to Odoo. This connector is the secure bridge - connection, webhook subscription and event ingest.</p>
+  </div>
+
+  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.01em;border-top:1px solid #ddd7cd;padding-top:28px;">What it does</h2>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin:24px 0 40px;">
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Connection per company</h3>
+      <p style="color:#6b655c;margin:0;">Set the XCall server URL and API key on each company, then test the connection with one click.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Webhook subscription</h3>
+      <p style="color:#6b655c;margin:0;">Odoo registers its own receiver URL and subscribes to call events on the server. Subscribe / unsubscribe from a button.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Verified ingest</h3>
+      <p style="color:#6b655c;margin:0;">Every incoming webhook is checked with an HMAC signature. Forged or unsigned requests are rejected.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Event log</h3>
+      <p style="color:#6b655c;margin:0;">Duplicates are dropped and each event is written to a searchable log, so nothing is processed twice and everything is auditable.</p>
+    </div>
+  </div>
+
+  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.01em;border-top:1px solid #ddd7cd;padding-top:28px;">Setup &amp; usage</h2>
+  <ol style="color:#6b655c;font-size:16px;padding-left:20px;margin:16px 0 40px;">
+    <li style="margin-bottom:10px;">Install the module - a <b style="color:#14120f;">XCall</b> menu appears.</li>
+    <li style="margin-bottom:10px;">Open <b style="color:#14120f;">XCall > Connection</b>, fill in <b style="color:#14120f;">Backend URL</b> and <b style="color:#14120f;">API Key</b> (from your XCall panel).</li>
+    <li style="margin-bottom:10px;">Click <b style="color:#14120f;">Connect</b> - Odoo generates a shared secret, registers its webhook URL and subscribes to call events. The status turns to <i>Connected</i>.</li>
+    <li style="margin-bottom:10px;">Click <b style="color:#14120f;">Send Test</b> to confirm the server can reach Odoo.</li>
+    <li style="margin-bottom:10px;">Incoming calls now arrive under <b style="color:#14120f;">XCall > Calls</b>; every raw webhook is kept under <b style="color:#14120f;">Events Log</b>.</li>
+    <li>Install <b style="color:#14120f;">XCall CRM</b> to link those calls to leads and attach the audio.</li>
+  </ol>
+
+  <div style="background:#14120f;color:#f6f3ee;border-radius:2px;padding:28px 32px;margin-bottom:16px;">
+    <h2 style="font-size:20px;font-weight:600;margin:0 0 10px;color:#f6f3ee;">Requirements</h2>
+    <p style="margin:0;color:#a09889;">A <b style="color:#f6f3ee;">XCall account and server</b> (API key + secret from the XCall panel). This module is a connector to that service and does not work standalone.</p>
+  </div>
+
+  <p style="text-align:center;color:#8c8478;font-size:14px;margin-top:32px;">XCall - Odoo 19 - LGPL-3</p>
+</section>

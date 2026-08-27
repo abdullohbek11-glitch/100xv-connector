@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Top-level category -->
+    <record id="module_category_levelix_calls" model="ir.module.category">
+        <field name="name">XCall</field>
+        <field name="sequence">90</field>
+    </record>
+
+    <!-- Privilege — user formda guruhlar shu ostida bitta selektor bo'ladi -->
+    <record id="privilege_levelix_calls" model="res.groups.privilege">
+        <field name="name">XCall</field>
+        <field name="category_id" ref="module_category_levelix_calls"/>
+        <field name="sequence">10</field>
+    </record>
+
+    <!-- Manager: read + create + update (delete YO'Q) -->
+    <record id="group_levelix_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="privilege_id" ref="privilege_levelix_calls"/>
+    </record>
+
+    <!-- Administrator: to'liq CRUD (Manager'ni ham o'z ichiga oladi) -->
+    <record id="group_levelix_admin" model="res.groups">
+        <field name="name">Administrator</field>
+        <field name="privilege_id" ref="privilege_levelix_calls"/>
+        <field name="implied_ids" eval="[(4, ref('group_levelix_manager'))]"/>
+    </record>
+
+    <!-- Odoo bosh admin foydalanuvchisiga default to'liq huquq.
+         Oddiy userlar hech qanday guruh olmaydi — admin qo'lda beradi. -->
+    <record id="base.user_admin" model="res.users">
+        <field name="group_ids" eval="[(4, ref('group_levelix_admin'))]"/>
+    </record>
+
+    <!-- Multi-company izolyatsiyasi (global record rule'lar). company_id uchala modelда
+         required — shu bois hammasi QAT'IY (shared yozuv yo'q). DIQQAT: bu rule'lar
+         `sudo()`ni to'xtatmaydi — webhook matching alohida company domeni bilan cheklanadi. -->
+    <record id="rule_levelix_call_company" model="ir.rule">
+        <field name="name">XCall Call: multi-company</field>
+        <field name="model_id" ref="model_levelix_calls_call"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id','in',company_ids)]</field>
+    </record>
+    <record id="rule_levelix_event_company" model="ir.rule">
+        <field name="name">XCall Event: multi-company</field>
+        <field name="model_id" ref="model_levelix_calls_event"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id','in',company_ids)]</field>
+    </record>
+    <record id="rule_levelix_config_company" model="ir.rule">
+        <field name="name">XCall Config: multi-company (strict)</field>
+        <field name="model_id" ref="model_levelix_calls_config"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id','in',company_ids)]</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_levelix_root"
+              name="XCall"
+              web_icon="levelix_calls_connector,static/description/icon.png"
+              groups="group_levelix_manager"
+              sequence="90"/>
+
+    <menuitem id="menu_levelix_call"
+              name="Calls"
+              parent="menu_levelix_root"
+              action="action_levelix_call"
+              sequence="10"
+              groups="group_levelix_manager"/>
+
+    <menuitem id="menu_levelix_event"
+              name="Events Log"
+              parent="menu_levelix_root"
+              action="action_levelix_event"
+              sequence="20"
+              groups="group_levelix_manager"/>
+
+    <menuitem id="menu_levelix_config"
+              name="Connection"
+              parent="menu_levelix_root"
+              action="action_levelix_connection"
+              sequence="30"
+              groups="group_levelix_admin"/>
+
+</odoo>

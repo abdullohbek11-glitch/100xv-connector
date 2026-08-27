@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Connection form: lead_not_found sozlamasi + operatorlarni tortish tugmasi -->
+    <record id="view_levelix_config_form_crm" model="ir.ui.view">
+        <field name="name">levelix.calls.config.form.crm</field>
+        <field name="model">levelix.calls.config</field>
+        <field name="inherit_id" ref="levelix_calls_connector.view_levelix_config_form"/>
+        <field name="arch" type="xml">
+            <field name="api_key" position="after">
+                <field name="lead_not_found"/>
+            </field>
+            <button name="action_send_test" position="after">
+                <button name="action_fetch_operators" type="object"
+                        string="Fetch operators" invisible="not subscription_id"/>
+            </button>
+        </field>
+    </record>
+
+    <!-- Calls: CRM maydonlari -->
+    <record id="view_levelix_call_list_crm" model="ir.ui.view">
+        <field name="name">levelix.calls.call.list.crm</field>
+        <field name="model">levelix.calls.call</field>
+        <field name="inherit_id" ref="levelix_calls_connector.view_levelix_call_list"/>
+        <field name="arch" type="xml">
+            <field name="contact_name" position="after">
+                <field name="lead_id" optional="show"/>
+                <field name="operator_user_id" optional="hide"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_levelix_call_form_crm" model="ir.ui.view">
+        <field name="name">levelix.calls.call.form.crm</field>
+        <field name="model">levelix.calls.call</field>
+        <field name="inherit_id" ref="levelix_calls_connector.view_levelix_call_form"/>
+        <field name="arch" type="xml">
+            <field name="status" position="after">
+                <field name="partner_id"/>
+                <field name="lead_id"/>
+                <field name="operator_user_id"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Operator mapping -->
+    <record id="view_levelix_user_map_list" model="ir.ui.view">
+        <field name="name">levelix.calls.user.map.list</field>
+        <field name="model">levelix.calls.user.map</field>
+        <field name="arch" type="xml">
+            <list string="Operator Mapping" editable="bottom">
+                <field name="backend_email"/>
+                <field name="backend_name" readonly="1"/>
+                <field name="user_id" domain="[('company_ids', 'in', company_id)]"/>
+                <field name="company_id" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_levelix_user_map" model="ir.actions.act_window">
+        <field name="name">Operator Mapping</field>
+        <field name="res_model">levelix.calls.user.map</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <!-- Menyular (XCall ostiga) -->
+    <menuitem id="menu_levelix_user_map"
+              name="Operator Mapping"
+              parent="levelix_calls_connector.menu_levelix_root"
+              action="action_levelix_user_map"
+              sequence="40"
+              groups="levelix_calls_connector.group_levelix_admin"/>
+
+    <menuitem id="menu_levelix_number_fix"
+              name="Normalize Phone Numbers"
+              parent="levelix_calls_connector.menu_levelix_root"
+              action="action_levelix_number_fix"
+              sequence="50"
+              groups="levelix_calls_connector.group_levelix_admin"/>
+
+</odoo>

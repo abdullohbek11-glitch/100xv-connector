@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_levelix_user_map_manager,levelix.calls.user.map.manager,model_levelix_calls_user_map,levelix_calls_connector.group_levelix_manager,1,1,1,0
+access_levelix_user_map_admin,levelix.calls.user.map.admin,model_levelix_calls_user_map,levelix_calls_connector.group_levelix_admin,1,1,1,1
+access_levelix_number_fix,levelix.number.fix,model_levelix_number_fix,levelix_calls_connector.group_levelix_admin,1,1,1,1

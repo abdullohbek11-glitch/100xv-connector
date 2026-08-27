@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_levelix_config_manager,levelix.calls.config.manager,model_levelix_calls_config,group_levelix_manager,1,1,1,0
+access_levelix_config_admin,levelix.calls.config.admin,model_levelix_calls_config,group_levelix_admin,1,1,1,1
+access_levelix_event_manager,levelix.calls.event.manager,model_levelix_calls_event,group_levelix_manager,1,1,1,0
+access_levelix_event_admin,levelix.calls.event.admin,model_levelix_calls_event,group_levelix_admin,1,1,1,1
+access_levelix_call_manager,levelix.calls.call.manager,model_levelix_calls_call,group_levelix_manager,1,1,1,0
+access_levelix_call_admin,levelix.calls.call.admin,model_levelix_calls_call,group_levelix_admin,1,1,1,1

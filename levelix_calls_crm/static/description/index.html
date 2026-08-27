@@ -1,0 +1,60 @@
+<section style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#14120f;max-width:960px;margin:0 auto;line-height:1.6;">
+
+  <img src="banner.png" alt="XCall CRM" style="width:100%;height:auto;border-radius:2px;display:block;margin-bottom:40px;">
+
+  <div style="border-left:3px solid #2e699d;padding:4px 0 4px 20px;margin-bottom:40px;">
+    <p style="text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:#2e699d;margin:0 0 8px;">Phase 2 - CRM</p>
+    <h1 style="font-size:34px;font-weight:600;margin:0 0 12px;letter-spacing:-.02em;">Every call, on the right lead</h1>
+    <p style="font-size:19px;color:#6b655c;margin:0;">Incoming calls are matched to a CRM lead by phone number and logged in the chatter - with the recording, right where your sales team works.</p>
+  </div>
+
+  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.01em;border-top:1px solid #ddd7cd;padding-top:28px;">See it in action</h2>
+  <p style="color:#6b655c;margin:8px 0 18px;">A call logged on the opportunity - direction, number, status and duration, with the recording playable right in the chatter.</p>
+  <img src="screenshot-lead.png" alt="Call logged on a CRM opportunity with audio player" style="width:100%;height:auto;border:1px solid #ddd7cd;border-radius:2px;display:block;margin-bottom:40px;">
+
+  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.01em;border-top:1px solid #ddd7cd;padding-top:28px;">What it does</h2>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;margin:24px 0 40px;">
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Smart matching</h3>
+      <p style="color:#6b655c;margin:0;">The caller number is normalized to E.164 and matched against existing leads and opportunities - no more misfiled calls.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Never lose a call</h3>
+      <p style="color:#6b655c;margin:0;">If no lead matches, a new opportunity is created automatically, so every call ends up in the pipeline.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Audio in the chatter</h3>
+      <p style="color:#6b655c;margin:0;">A single message logs direction, duration, status and operator, plus an inline <b style="color:#14120f;">audio player</b> and a details block.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Late recording</h3>
+      <p style="color:#6b655c;margin:0;">When the recording finishes transcoding on the server, it is attached to the same chatter message automatically.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Operator mapping</h3>
+      <p style="color:#6b655c;margin:0;">Map a XCall backend user to an Odoo user so the call is credited to the right salesperson.</p>
+    </div>
+    <div>
+      <h3 style="font-size:17px;font-weight:600;margin:0 0 6px;">Number-fix tool</h3>
+      <p style="color:#6b655c;margin:0;">A one-time action reformats badly stored phone/mobile numbers so matching stays reliable.</p>
+    </div>
+  </div>
+
+  <h2 style="font-size:24px;font-weight:600;letter-spacing:-.01em;border-top:1px solid #ddd7cd;padding-top:28px;">Setup &amp; usage</h2>
+  <ol style="color:#6b655c;font-size:16px;padding-left:20px;margin:16px 0 40px;">
+    <li style="margin-bottom:10px;">Install this module - it is added on top of <b style="color:#14120f;">XCall Connector</b>, which must already be connected.</li>
+    <li style="margin-bottom:10px;">Open <b style="color:#14120f;">XCall > Connection</b> and click <b style="color:#14120f;">Fetch operators</b> to pull the users from the server.</li>
+    <li style="margin-bottom:10px;">Go to <b style="color:#14120f;">XCall > Operator Mapping</b> and map each backend operator to an Odoo user.</li>
+    <li style="margin-bottom:10px;">In <b style="color:#14120f;">Connection</b>, keep <b style="color:#14120f;">Create a lead when none is found</b> enabled so no call is lost (optional).</li>
+    <li style="margin-bottom:10px;">Optionally run <b style="color:#14120f;">XCall > Normalize Phone Numbers</b> once to reformat existing contact/lead numbers for reliable matching.</li>
+    <li>Done - every incoming call is matched to a lead and logged in its chatter with the audio player.</li>
+  </ol>
+
+  <div style="background:#14120f;color:#f6f3ee;border-radius:2px;padding:28px 32px;margin-bottom:16px;">
+    <h2 style="font-size:20px;font-weight:600;margin:0 0 10px;color:#f6f3ee;">Requirements</h2>
+    <p style="margin:0;color:#a09889;">Depends on <b style="color:#f6f3ee;">XCall Connector</b> and the standard <b style="color:#f6f3ee;">CRM</b> app. A XCall account and server are required.</p>
+  </div>
+
+  <p style="text-align:center;color:#8c8478;font-size:14px;margin-top:32px;">XCall - Odoo 19 - LGPL-3</p>
+</section>
